@@ -4,7 +4,7 @@ title: "SB3: Action Masked PPO for Connect Four"
 
 # SB3: Action Masked PPO for Connect Four
 
-This tutorial shows how to train a agents using Maskable [Proximal Policy Optimization](https://sb3-contrib.readthedocs.io/en/master/modules/ppo_mask.html) (PPO) on the [Connect Four](https://pettingzoo.farama.org/environments/classic/chess/) environment ([AEC](https://pettingzoo.farama.org/api/aec/)).
+This tutorial shows how to train a agents using Maskable [Proximal Policy Optimization](https://sb3-contrib.readthedocs.io/en/master/modules/ppo_mask.html) (PPO) on the [Connect Four](/environments/classic/chess/) environment ([AEC](/api/aec/)).
 
 It creates a custom Wrapper to convert to a [Gymnasium](https://gymnasium.farama.org/)-like environment which is compatible with [SB3 action masking](https://sb3-contrib.readthedocs.io/en/master/modules/ppo_mask.html).
 
@@ -44,9 +44,9 @@ The following code should run without any issues. The comments are designed to h
 
 The following script uses [pytest](https://docs.pytest.org/en/latest/) to test all other PettingZoo environments which support action masking.
 
-This code yields good results on simpler environments like [Gin Rummy](/environments/classic/gin_rummy/) and [Texas Hold’em No Limit](/environments/classic/texas_holdem_no_limit/), while more difficult environments such as [Chess](/environments/classic/chess/) or [Hanabi](/environments/classic/hanabi/) will likely take much more training time and hyperparameter tuning.
+This code yields decent results on simpler environments like [Connect Four](/environments/classic/connect_four/), while more difficult environments such as [Chess](/environments/classic/chess/) or [Hanabi](/environments/classic/hanabi/) will likely take much more training time and hyperparameter tuning.
 
 ```{eval-rst}
-.. literalinclude:: ../../../tutorials/SB3/test_sb3_action_mask.py
+.. literalinclude:: ../../../tutorials/SB3/test/test_sb3_action_mask.py
    :language: python
 ```
